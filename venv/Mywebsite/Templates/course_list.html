@@ -1,0 +1,19 @@
+{%extends 'base.html'%}
+
+    
+    {%block content%}
+    <h1>course List</h1>
+    <p>this is list of our courses.Read it carefully and then fill the form of your informations</p>
+
+    <table border="3" align="center" >
+    {%for i in Data%}
+    <tr>
+        <td> {{i.course_name}} </td>
+        <td> {{i.start_date}} </td>
+        <td> {{i.teacher}} </td>
+        <td> {{i.exam_date}} </td>
+        <td> {{i.price}} </td>
+    </tr>
+    {%endfor%}
+    </table>
+    {%endblock%}
