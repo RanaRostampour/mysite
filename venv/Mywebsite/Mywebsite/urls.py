@@ -17,9 +17,14 @@ from django.contrib import admin
 from django.urls import path 
 from pages.views import home_view
 from courses.views import index
+from register.views import register
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',home_view,name='home'),
     path('courses/',index,name='course_list'),
+    path('register/',register,name='registerForm'),
+    path('success/',register,name='success')
+
+    
 ]

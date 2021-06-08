@@ -2,10 +2,15 @@
 
     
     {%block content%}
-    <h1>course List</h1>
-    <p>this is list of our courses.Read it carefully and then fill the form of your informations</p>
+<div class="container">
+      <div class="page-header">
+        <h1>لیست دوره ها</h1>      
+      </div>
+    <p style="font-size: large;color: rgb(90, 47, 170);">لیست دوره های ما در جدول زیر آمده است. آنرا با دقت مطالعه کرده و سپس فرم پیش ثبت نام خود را پر کنید تا کارشناسان ما در اسرع وقت باشما تماس بگیرند</p>
+</div>
+<div class="container">
+    <table border="1" align="center" class="table-hover table-condensed table-striped">
 
-    <table border="3" align="center" >
     {%for i in Data%}
     <tr>
         <td> {{i.course_name}} </td>
@@ -16,4 +21,8 @@
     </tr>
     {%endfor%}
     </table>
+    </div>
+    <div class="container">
+      <a href="#" class="btn btn-info btn-lg" role="button">پیش ثبت نام </a>
+    </div>
     {%endblock%}
