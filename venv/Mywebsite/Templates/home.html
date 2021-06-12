@@ -7,6 +7,7 @@
         <h1>آموزشگاه ...</h1>
         <p>لذت یادگیری آنلاین</p> 
       </div>
+      
 <div class="container">
   <h2>Carousel Example</h2>  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -20,15 +21,15 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="../Templates/img/CollegeStudent.jpg" alt="online_learning" style="width:100%;">
+        <img src="img/CollegeStudent.jpg" alt="online_learning" style="width:100%;">
       </div>
 
-      <div class="item">
-        <img src="../Templates/img/online_learning.jpg" alt="online_learning" style="width:100%;">
+      <div class="item">{% load static %}
+        <img src='img/online_learning.jpg' alt="online_learning" style="width:100%;">
       </div>
     
       <div class="item">
-        <img src="./img/online-learning1.jpg" alt="online-learning " style="width:100%;">
+        <img src="img/online-learning1.jpg" alt="online-learning " style="width:100%;">
       </div>
     </div>
 
@@ -43,8 +44,8 @@
     </a>
   </div>
 </div>
-<div class="container">
-  <img class="img-responsive" src="../Templates/img/CollegeStudent.jpg" > 
+<div class="container">{% load static %}
+  <img class="img-responsive" src="{% static 'img/online_learning.jpg' %}" > 
 </div>
         
 <div class="container">

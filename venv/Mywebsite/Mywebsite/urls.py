@@ -18,13 +18,17 @@ from django.urls import path
 from pages.views import home_view
 from courses.views import index
 from register.views import register
+from django.conf import settings
+from django.conf.urls.static import static
+from about.views import about_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',home_view,name='home'),
     path('courses/',index,name='course_list'),
     path('register/',register,name='registerForm'),
-    path('success/',register,name='success')
+    path('success/',register,name='success'),
+    path('about/',about_view,name='aboutUs'),
 
     
-]
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
