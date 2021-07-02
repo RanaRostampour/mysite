@@ -9,7 +9,7 @@
     <p style="font-size: large;color: rgb(90, 47, 170);">لیست دوره های ما در جدول زیر آمده است. آنرا با دقت مطالعه کرده و سپس فرم پیش ثبت نام خود را پر کنید تا کارشناسان ما در اسرع وقت باشما تماس بگیرند</p>
 </div>
 <div class="container">
-    <table border="1" align="center" class="table-hover table-condensed table-striped">
+    <table border="1" align="center" class="table-hover table-condensed table-striped table-courses" style="width: 100%;">
 
     {%for i in Data%}
     <tr>
@@ -22,7 +22,8 @@
     {%endfor%}
     </table>
     </div>
+    <br>
     <div class="container">
-      <a href="#" class="btn btn-info btn-lg" role="button">پیش ثبت نام </a>
+      <a href="#" class="btn btn-info btn-lg" role="button" style="width: 30%;">پیش ثبت نام </a>
     </div>
     {%endblock%}

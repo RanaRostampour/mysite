@@ -2,132 +2,156 @@
 
 {% block content %}
 <div class="container first">
-<div class="jumbotron text-center">
-    <h1>آموزشگاه</h1> 
-    <p>برای اطلاع از دوره های جدید و اخبار آموزشگاه ما را دنبال کنید</p> 
+  <div class="jumbotron text-center">
+    <h1>آموزشگاه</h1>
+    <p>برای اطلاع از دوره های جدید و اخبار آموزشگاه ما را دنبال کنید</p>
     <form lang='en' dir="ltr" class="form-inline" action="." method="POST"> {%csrf_token%} {{form.as_p}}
       <div class="input-group">
-        <input type="email"  class="form-control" size="50" placeholder="Email Address" required>
+        <input type="email" class="form-control" size="50" placeholder="Email Address" required>
         <div class="input-group-btn">
           <button type="submit" class="btn btn-danger">دنبال کردن</button>
         </div>
       </div>
     </form>
   </div>
+</div>
+
+<div class="container  about" >
+  <h1>درباره ی ما</h1>
+  <div class="col-sm-6" dir="ltr" >
+    <p>LPI was formally incorporated as a non-profit organization in New Brunswick, Canada on October 25, 1999. It's Mission, To provide a global framework, industry leadership and services to enhance, develop and further lifelong professional careers in Linux and Open Source technologiesi.
+    </p>
+    <br>
+    Our purpose is to enable economic and creative opportunities for everybody by making open source knowledge and skills certification universally accessible.
   </div>
-  
-<!--CAROSEL-->
+  <div class="col-sm-6">
+    <p>آنیسا سرچشمه دانش لینوکس ایران، با نگاه انحصاری و تخصصی به لینوکس و متن باز، مفتخر به تربیت هزاران متخصص توانمند است که در مطرح ترین کمپانی های دنیا، فعالیت دارند. این شرکت، ارائه دهنده خدمات آموزش و مشاوره تخصصی در حوزه های مدیریت سیستم های لینوکس، توسعه نرم افزار، DevOps، رایانش ابری، Embedded systems، IOT و Data Science است. همچنین این مجموعه افتخار دارد با کمپانی های بزرگ دنیا از جمله موسسه LPI در برگزاری آزمون های بین المللی لینوکس و بیش از 400 شرکت و سازمان داخلی و خارجی در برگزاری دوره های رسمی برای ایشان، همکاری داشته و دارد.
+    </p>
+  </div>
+</div>
 
-  <div class="container">
-      
-    <h2>شرکتهایی که با ما همکاری میکنند</h2>
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-
-      <!-- Wrapper for slides -->
-
-      <div class="container">
-        <h2>Carousel Example</h2>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
-      
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-      
-            <div class="item active">
-              <img src="la.jpg" alt="Los Angeles" style="width:100%;">
-              <div class="carousel-caption">
-                <h3> ایرانسل </h3>
-                <p>شرکت ایرانسل یک شرکت اپراتور ارائه دهنده خدمات ....</p>
-              </div>
-            </div>
-      
-            <div class="item">
-              <img src="chicago.jpg" alt="Chicago" style="width:100%;">
-              <div class="carousel-caption">
-                <h3> ایرانسل </h3>
-                <p>شرکت ایرانسل یک شرکت اپراتور ارائه دهنده خدمات ....</p>
-              </div>
-            </div>
-          
-            <div class="item">
-              <img src="ny.jpg" alt="New York" style="width:100%;">
-              <div class="carousel-caption">
-                <h3> ایرانسل </h3>
-                <p>شرکت ایرانسل یک شرکت اپراتور ارائه دهنده خدمات ....</p>
-              </div>
-            </div>
-        
-          </div>
-      
-          <!-- Left and right controls -->
-          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
-
-  <h3> ایرانسل </h3>
-        <p>شرکت ایرانسل یک شرکت اپراتور ارائه دهنده خدمات ....</p>
-        </div>
-
- <!--SERVICES-->
+<!--teachers-->
 
 <div class="container-fluid text-center">
-    <h2>SERVICES</h2>
-    <h4>What we offer</h4>
-    <br>
-    <div class="row">
-      <div class="col-sm-4">
-        <span class="glyphicon glyphicon-off"></span>
-        <h4>POWER</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
-      </div>
-      <div class="col-sm-4">
-        <span class="glyphicon glyphicon-heart"></span>
-        <h4>LOVE</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
-      </div>
-      <div class="col-sm-4">
-        <span class="glyphicon glyphicon-lock"></span>
-        <h4>JOB DONE</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
-      </div>
+  <h2>مدرسین آموزشگاه</h2>
+  <br>
+  <div class="row">
+    <div class="col-sm-3">
+      <img src='img/online_learning.jpg' alt="online_learning">
+      <h4>مهندس آزیتا رهبر</h4>
+      <p>متخصص لینوکس </p>
     </div>
-    <br><br>
-    <div class="row">
-      <div class="col-sm-4">
-        <span class="glyphicon glyphicon-leaf"></span>
-        <h4>GREEN</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
-      </div>
-      <div class="col-sm-4">
-        <span class="glyphicon glyphicon-certificate"></span>
-        <h4>CERTIFIED</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
-      </div>
-      <div class="col-sm-4">
-        <span class="glyphicon glyphicon-wrench"></span>
-        <h4 style="color:#303030;">HARD WORK</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
-      </div>
+    <div class="col-sm-3">
+      <img src='img/online_learning.jpg' alt="online_learning">
+      <h4>مهندس آزیتا رهبر</h4>
+      <p>متخصص لینوکس </p>
+    </div>
+    <div class="col-sm-3">
+      <img src='img/online_learning.jpg' alt="online_learning">
+      <h4>مهندس آزیتا رهبر</h4>
+      <p>متخصص لینوکس </p>
+    </div>
+    <div class="col-sm-3">
+      <img src='img/online_learning.jpg' alt="online_learning">
+      <h4>مهندس آزیتا رهبر</h4>
+      <p>متخصص لینوکس </p>
     </div>
   </div>
+  <br><br>
+  <div class="row">
+    <div class="col-sm-3">
+      <img src='img/online_learning.jpg' alt="online_learning">
+      <h4>مهندس آزیتا رهبر</h4>
+      <p>متخصص لینوکس </p>
+    </div>
+    <div class="col-sm-3">
+      <img src='img/online_learning.jpg' alt="online_learning">
+      <h4>مهندس آزیتا رهبر</h4>
+      <p>متخصص لینوکس </p>
+    </div>
+    <div class="col-sm-3">
+      <img src='img/online_learning.jpg' alt="online_learning">
+      <h4>مهندس آزیتا رهبر</h4>
+      <p>متخصص لینوکس </p>
+    </div>
+    <div class="col-sm-3">
+      <img src='img/online_learning.jpg' alt="online_learning">
+      <h4>مهندس آزیتا رهبر</h4>
+      <p>متخصص لینوکس </p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col-sm-3">
+      <img src='img/online_learning.jpg' alt="online_learning">
+      <h4>مهندس آزیتا رهبر</h4>
+      <p>متخصص لینوکس </p>
+    </div>
+    <div class="col-sm-3">
+      <img src='img/online_learning.jpg' alt="online_learning">
+      <h4>مهندس آزیتا رهبر</h4>
+      <p>متخصص لینوکس </p>
+    </div>
+    <div class="col-sm-3">
+      <img src='img/online_learning.jpg' alt="online_learning">
+      <h4>مهندس آزیتا رهبر</h4>
+      <p>متخصص لینوکس </p>
+    </div>
+    <div class="col-sm-3">
+      <img src='img/online_learning.jpg' alt="online_learning">
+      <h4>مهندس آزیتا رهبر</h4>
+      <p>متخصص لینوکس </p>
+    </div>
+  </div>
+  <br><br>
+</div>
 
 
-{% endblock %} 
+
+
+
+<!--SERVICES-->
+
+<div class="container-fluid text-center">
+  <h2>خدمات ما</h2>
+  <h4>آنچه ما برای شما فراهم میکنیم</h4>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-off"></span>
+      <h4>POWER</h4>
+      <p>افزایش قدرت یادگیری</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart"></span>
+      <h4>LOVE</h4>
+      <p>اخلاق حرفه ای با دانش پژوهان</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock"></span>
+      <h4>JOB </h4>
+      <p>ورود به بازار کار</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf"></span>
+      <h4>GREEN</h4>
+      <p></p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate"></span>
+      <h4>CERTIFIED</h4>
+      <p>مدرک معتبر</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench"></span>
+      <h4 style="color:#303030;">HARD WORK</h4>
+      <p></p>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

@@ -1,15 +1,15 @@
 {%extends 'base.html'%}
 
-    
-    {%block content%}
 
-    <div class="jumbotron text-center">
-        <h1>آموزشگاه ...</h1>
-        <p>لذت یادگیری آنلاین</p> 
-      </div>
-      
+{%block content%}
+
+<div class="jumbotron text-center">
+  <h1>آموزشگاه ...</h1>
+  <p>لذت یادگیری آنلاین</p>
+</div>
+
 <div class="container">
-  <h2>Carousel Example</h2>  
+  <h2>Carousel Example</h2>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -27,7 +27,7 @@
       <div class="item">{% load static %}
         <img src='img/online_learning.jpg' alt="online_learning" style="width:100%;">
       </div>
-    
+
       <div class="item">
         <img src="img/online-learning1.jpg" alt="online-learning " style="width:100%;">
       </div>
@@ -45,27 +45,27 @@
   </div>
 </div>
 <div class="container">{% load static %}
-  <img class="img-responsive" src="{% static 'img/online_learning.jpg' %}" > 
+  <img class="img-responsive" src="{% static 'img/online_learning.jpg' %}">
 </div>
-        
+
 <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <h3>Column 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-      </div>
-      <div class="col-sm-4">
-        <h3>Column 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-      </div>
-      <div class="col-sm-4">
-        <h3>Column 3</h3>        
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-      </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Column 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 3</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
     </div>
   </div>
-  
-    {%endblock%}
+</div>
+
+{%endblock%}
