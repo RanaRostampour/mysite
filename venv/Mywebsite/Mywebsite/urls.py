@@ -31,4 +31,4 @@ urlpatterns = [
     path('about/',about_view,name='aboutUs'),
 
     
-]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
