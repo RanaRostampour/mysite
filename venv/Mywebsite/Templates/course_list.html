@@ -1,29 +1,40 @@
+
 {%extends 'base.html'%}
 
     
-    {%block content%}
+{%block content%}
 <div class="container">
-      <div class="page-header">
-        <h1>لیست دوره ها</h1>      
-      </div>
-    <p style="font-size: large;color: rgb(90, 47, 170);">لیست دوره های ما در جدول زیر آمده است. آنرا با دقت مطالعه کرده و سپس فرم پیش ثبت نام خود را پر کنید تا کارشناسان ما در اسرع وقت باشما تماس بگیرند</p>
+  <div class="page-header">
+    <h1>لیست دوره ها</h1>      
+  </div><br>
+<p style="font-size: large;color: rgb(47, 70, 170);">لیست دوره های ما در جدول زیر آمده است. <br>آنرا با دقت مطالعه کرده و سپس فرم پیش ثبت نام خود را پر کنید تا کارشناسان ما در اسرع وقت با شما تماس بگیرند.</p>
 </div>
+<br>
 <div class="container">
-    <table border="1" align="center" class="table-hover table-condensed table-striped table-courses" style="width: 100%;">
+<table border="2" align="center" class="table-hover table-condensed table-striped table-courses" style="width: 100%;">
 
-    {%for i in Data%}
-    <tr>
-        <td> {{i.course_name}} </td>
-        <td> {{i.start_date}} </td>
-        <td> {{i.teacher}} </td>
-        <td> {{i.exam_date}} </td>
-        <td> {{i.price}} </td>
-    </tr>
-    {%endfor%}
-    </table>
-    </div>
-    <br>
-    <div class="container">
-      <a href="#" class="btn btn-info btn-lg" role="button" style="width: 30%;">پیش ثبت نام </a>
-    </div>
-    {%endblock%}
+
+<tr style="background-color: rgba(135, 206, 250, 0.651);">
+<th style="text-align:center;">نام دوره </th>
+<th style="text-align:center;">تاریخ شروع کلاس</th>
+<th style="text-align:center;">نام استاد </th>
+<th style="text-align:center;">تاریخ امتحان</th>
+<th style="text-align:center;">شهریه (تومان) </th>
+</tr>
+{%for i in Data%}
+  <tr>
+  <td style="background-color:rgba(92, 171, 235, 0.062);text-align:center;">{{i.course_name}} </td>
+  <td style="text-align:center;"> {{i.start_date}} </td>
+  <td style="text-align:center;"> {{i.teacher}} </td>
+  <td style="text-align:center;"> {{i.exam_date}} </td>
+  <td style="text-align:center;"> {{i.price}} </td>
+</tr>
+{%endfor%}
+</table>
+</div>
+<br>
+<div class="container">
+  <a href="#" class="btn btn-info btn-lg" role="button" style="width: 30%;">پیش ثبت نام </a>
+</div>
+<br><br>
+{%endblock%}
