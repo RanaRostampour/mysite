@@ -29,6 +29,4 @@ urlpatterns = [
     path('register/',register,name='registerForm'),
     path('success/',register,name='success'),
     path('about/',about_view,name='aboutUs'),
-
-    
 ]

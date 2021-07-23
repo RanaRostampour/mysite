@@ -5,9 +5,9 @@
         <a class="navbar-brand" href="#" style="font-size:x-large;font-family: Tahoma,Verdana, Geneva, sans-serif;"> آموزشگاه </a>
       </div>
       <ul class="nav navbar-nav">
-        <li class="home"><a href="#" style="font-size:large;font-family: Tahoma,Verdana, Geneva, sans-serif;">خانه</a></li>
-        <li><a href="#"style="font-size:large;font-family: Tahoma,Verdana, Geneva, sans-serif;">لیست دوره ها</a></li>
-        <li><a href="#"style="font-size:large;font-family: Tahoma,Verdana, Geneva, sans-serif;">درباره ی ما </a></li>
+        <li class="/"><a href="{% url 'home' %}" style="font-size:large;font-family: Tahoma,Verdana, Geneva, sans-serif;">خانه</a></li>
+        <li><a href="{% url 'course_list' %}"style="font-size:large;font-family: Tahoma,Verdana, Geneva, sans-serif;">لیست دوره ها</a></li>
+        <li><a href="{% url 'aboutUs' %}"style="font-size:large;font-family: Tahoma,Verdana, Geneva, sans-serif;">درباره ی ما </a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> ثبت نام</a></li>
