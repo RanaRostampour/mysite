@@ -1,6 +1,7 @@
 {%extends 'base.html'%}
 
 {% block content %}
+<div>
 <div class="container first">
   <div class="jumbotron text-center">
     <h1>آموزشگاه</h1>
@@ -16,17 +17,33 @@
   </div>
 </div>
 
-<div class="container  about" style=" background-color: rgba(255, 127, 80, 0.226);border-radius:2%;">
-  <h3 >درباره ی ما</h3>
-  <div class="col-sm-6" dir="ltr"  >
-    <p style="text-justify: auto;"></p>LPI was formally incorporated as a non-profit organization in New Brunswick, Canada on October 25, 1999. It's Mission, To provide a global framework, industry leadership and services to enhance, develop and further lifelong professional careers in Linux and Open Source technologiesi.
+<div class=" container item ">
+  <div class="row">
+    <div class="col-lg-11">
+  {% load static %}
+  <img src={% static 'admin/img/about.png' %} alt="online-learning" class="center">
+    </div> 
+  </div>
+</div> 
+<br><br>
+
+<div class="container about" style=" background-color: rgba(80, 20, 83, 0.226);border-radius:2%;">
+  <div class="row">
+    <div class="col-lg-12">
+  <h3>درباره ی ما</h3>
+    </div>
+    <div class="col-lg-6">
+      <p style="text-justify:auto; font-size:medium">رهنمای دانش  سرچشمه دانش لینوکس ایران، با نگاه انحصاری و تخصصی به لینوکس و متن باز، مفتخر به تربیت هزاران متخصص توانمند است که در مطرح ترین کمپانی های دنیا، فعالیت دارند. این شرکت، ارائه دهنده خدمات آموزش و مشاوره تخصصی در حوزه های مدیریت سیستم های لینوکس، توسعه نرم افزار، DevOps، رایانش ابری، Embedded systems، IOT و Data Science است. همچنین این مجموعه افتخار دارد با کمپانی های بزرگ دنیا از جمله موسسه LPI در برگزاری آزمون های بین المللی لینوکس و بیش از 400 شرکت و سازمان داخلی و خارجی در برگزاری دوره های رسمی برای ایشان، همکاری داشته و دارد.</p>
+      </div>
+      <br> 
+  <div class="col-lg-6" dir="ltr"  >
+    <p>LPI was formally incorporated as a non-profit organization in New Brunswick, Canada on October 25, 1999. It's Mission, To provide a global framework, industry leadership and services to enhance, develop and further lifelong professional careers in Linux and Open Source technologiesi.
     </p>
     <p> Our purpose is to enable economic and creative opportunities for everybody by making open source knowledge and skills certification universally accessible. <br></p>
-  <br></div>
-  <div class="col-sm-6">
-    <p>آنیسا سرچشمه دانش لینوکس ایران، با نگاه انحصاری و تخصصی به لینوکس و متن باز، مفتخر به تربیت هزاران متخصص توانمند است که در مطرح ترین کمپانی های دنیا، فعالیت دارند. این شرکت، ارائه دهنده خدمات آموزش و مشاوره تخصصی در حوزه های مدیریت سیستم های لینوکس، توسعه نرم افزار، DevOps، رایانش ابری، Embedded systems، IOT و Data Science است. همچنین این مجموعه افتخار دارد با کمپانی های بزرگ دنیا از جمله موسسه LPI در برگزاری آزمون های بین المللی لینوکس و بیش از 400 شرکت و سازمان داخلی و خارجی در برگزاری دوره های رسمی برای ایشان، همکاری داشته و دارد.</p>
+</div>
+
+      <br>
   </div>
-  <br>
 </div>
 
 <!--teachers-->
@@ -36,70 +53,48 @@
 
   <div class="row">
     <div class="col-sm-3">
-      <img src='img/online_learning.jpg' alt="online_learning" height="200" width="200">
-      <h4>مهندس آزیتا رهبر</h4>
-      <p>متخصص لینوکس </p>
+      {% load static %}
+      <img src={% static 'admin/img/avatars/FaranakSaeidi.jpg' %} alt="online_learning" height="200" width="200" style="border-radius: 50%;">
+      <h4>مهندس فرانک سعیدی</h4>
+      <p>LPI Approved Instructor, LPIC-1, LPIC-2 </p>
     </div>
     <div class="col-sm-3">
-      <img src='img/online_learning.jpg' alt="online_learning" height="200" width="200">
-      <h4>مهندس آزیتا رهبر</h4>
-      <p>متخصص لینوکس </p>
+      <img src={% static 'admin/img/avatars/RoyaShams.jpg' %} alt="online_learning" height="200" width="200" style="border-radius: 50%;">
+      <h4>مهندس  رویا شمس</h4>
+      <p>LPI Approved Instructor,LPIC-1</p>
     </div>
     <div class="col-sm-3">
-      <img src='img/online_learning.jpg' alt="online_learning" height="200" width="200">
-      <h4>مهندس آزیتا رهبر</h4>
-      <p>متخصص لینوکس </p>
+      <img src={% static 'admin/img/avatars/VahidEzadi.jpg' %} alt="online_learning" height="200" width="200" style="border-radius: 50%;">
+      <h4>مهندس وحید ایزدی</h4>
+      <p>LPI Approved Instructor, LPIC-1, LPIC-2, LPIC-3 (300, 303)</p>
     </div>
     <div class="col-sm-3">
-      <img src='img/online_learning.jpg' alt="online_learning"height="200" width="200">
-      <h4>مهندس آزیتا رهبر</h4>
-      <p>متخصص لینوکس </p>
-    </div>
-  </div>
-  <br><br>
-  <div class="row">
-    <div class="col-sm-3">
-      <img src='img/online_learning.jpg' alt="online_learning" height="200" width="200">
-      <h4>مهندس آزیتا رهبر</h4>
-      <p>متخصص لینوکس </p>
-    </div>
-    <div class="col-sm-3">
-      <img src='img/online_learning.jpg' alt="online_learning" height="200" width="200">
-      <h4>مهندس آزیتا رهبر</h4>
-      <p>متخصص لینوکس </p>
-    </div>
-    <div class="col-sm-3">
-      <img src='img/online_learning.jpg' alt="online_learning" height="200" width="200">
-      <h4>مهندس آزیتا رهبر</h4>
-      <p>متخصص لینوکس </p>
-    </div>
-    <div class="col-sm-3">
-      <img src='img/online_learning.jpg' alt="online_learning" height="200" width="200"> 
-      <h4>مهندس آزیتا رهبر</h4>
-      <p>متخصص لینوکس </p>
+      <img src={% static 'admin/img/avatars/MohsenAsadi.jpg' %} alt="online_learning"height="200" width="200" style="border-radius: 50%;">
+      <h4>مهندس محسن اسدی</h4>
+      <p>GNU/Linux and Network Specialist </p>
     </div>
   </div>
   <br><br>
   <div class="row">
     <div class="col-sm-3">
-      <img src='img/online_learning.jpg' alt="online_learning" height="200" width="200">
-      <h4>مهندس آزیتا رهبر</h4>
-      <p>متخصص لینوکس </p>
+      <img src={% static 'admin/img/avatars/SaminAbdoli.jpg' %} alt="online_learning" height="200" width="200" style="border-radius: 50%;">
+      <h4>مهندس ثمین عبدلی</h4>
+      <p>GNU/Linux Programmer and Developer </p>
     </div>
     <div class="col-sm-3">
-      <img src='img/online_learning.jpg' alt="online_learning" height="200" width="200">
-      <h4>مهندس آزیتا رهبر</h4>
-      <p>متخصص لینوکس </p>
+      <img src={% static 'admin/img/avatars/AminAbedi.jpg' %} alt="online_learning" height="200" width="200" style="border-radius: 50%;">
+      <h4>مهندس امین عابدی</h4>
+      <p>GNU/Linux and Security Specialist </p>
     </div>
     <div class="col-sm-3">
-      <img src='img/online_learning.jpg' alt="online_learning" height="200" width="200">
-      <h4>مهندس آزیتا رهبر</h4>
-      <p>متخصص لینوکس </p>
+      <img src={% static 'admin/img/avatars/SahaSouri.jpg'' %} alt="online_learning" height="200" width="200" style="border-radius: 50%;">
+      <h4>مهندس سحر صوری</h4>
+      <p>Java Specialist </p>
     </div>
     <div class="col-sm-3">
-      <img src='img/online_learning.jpg' alt="online_learning" height="200" width="200">
-      <h4>مهندس آزیتا رهبر</h4>
-      <p>متخصص لینوکس </p>
+      <img src={% static 'admin/img/avatars/SinaMohammadi.jpg' %} alt="online_learning" height="200" width="200" style="border-radius: 50%;"> 
+      <h4>مهندس سینا محمدی</h4>
+      <p>Data Science Specialist </p>
     </div>
   </div>
   <br><br>
@@ -126,27 +121,28 @@
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-lock"></span>
-      <h4>بازار کار گسترده </h4>
+      <h4>معرفی به بازار کار </h4>
     </div>
   </div>
   <br><br>
   <div class="row">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-leaf"></span>
-      <h4></h4>
+      <h4>تضمین دوره</h4>
       
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-certificate"></span>
-      <h4>مدرک معتبر</h4><br>
+      <h4>امکان اخذ گواهی معتبر</h4><br>
       
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-wrench"></span>
-      <h4 style="color:#303030;">HARD WORK</h4>
+      <h4 style="color:#303030;">پشتیبانی ۲۴ ساعته</h4>
       
     </div>
   </div>
+</div>
 </div>
 
 

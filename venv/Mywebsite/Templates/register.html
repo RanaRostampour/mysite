@@ -3,10 +3,11 @@
 
 
 {% block content %}
-<div class="container">
+<div class="container register">
     <div class="page-header">
         <h1>فرم پیش ثبت نام</h1>      
-      </div>
+    </div>
+    <br>
     <form method="POST" class="form-group" style="float:right">
         {% csrf_token %}
         {{ form.as_p }}
@@ -24,4 +25,5 @@
 
     </form>
 </div>
+<br>
 {% endblock %} 
