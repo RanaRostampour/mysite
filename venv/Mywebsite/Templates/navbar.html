@@ -2,16 +2,22 @@
   <nav class="navbar navbar-inverse" style="background-color:#141741;">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#" style="font-size:x-large;font-family: Tahoma,Verdana, Geneva, sans-serif;"> آموزشگاه </a>
+        <a class="navbar-brand" href="{% url 'home' %}" style="font-size:x-large ;font-family: 'Times New Roman', Times, serif;"> رهنمای دانش </a>
       </div>
       <ul class="nav navbar-nav">
-        <li class="/"><a href="{% url 'home' %}" style="font-size:large;font-family: Tahoma,Verdana, Geneva, sans-serif;">خانه</a></li>
-        <li><a href="{% url 'course_list' %}"style="font-size:large;font-family: Tahoma,Verdana, Geneva, sans-serif;">لیست دوره ها</a></li>
-        <li><a href="{% url 'aboutUs' %}"style="font-size:large;font-family: Tahoma,Verdana, Geneva, sans-serif;">درباره ی ما </a></li>
+        <li class="">
+          <a href="{% url 'registerForm' %}" class="li-nav">پیش ثبت نام</a>
+        </li>
+        <li>
+          <a href="{% url 'course_list' %}" class="li-nav">لیست دوره ها</a>
+        </li>
+        <li>
+          <a href="{% url 'aboutUs' %}" class="li-nav">درباره ی ما </a>
+        </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> ثبت نام</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> ورود</a></li>
       </ul>
     </div>
-  </nav> 
+  </nav>

@@ -13,7 +13,7 @@ def register(response,*awrgs):
 
 
 
-	        return redirect("/")
+	        return render(response, "success.html")
     else:
         
 	    form = RegisterForm()

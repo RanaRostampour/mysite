@@ -8,22 +8,24 @@
         <h1>فرم پیش ثبت نام</h1>      
     </div>
     <br>
+    <div>
     <form method="POST" class="form-group" style="float:right">
-        {% csrf_token %}
-        {{ form.as_p }}
+        {%csrf_token%}
+        {{form.as_p}}
         
-        {%if form.errors%}
-        <div class='error'>
-            <div class="alert alert-danger alert-dismissible fade in">
-                <a href="" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                    {{form.errors.username}}{{form.errors.password2}}</div>
+        {%if form.errors in form%}
         
-        </div>
+            <div class="alert">
+                {{form.errors.all}}
+            </div>
+    
+        
         {%endif%}
         <button type="submit" class="btn btn-success">Register</button>
 
 
     </form>
+    </div>
 </div>
 <br>
 {% endblock %} 
