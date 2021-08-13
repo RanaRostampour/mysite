@@ -1,37 +1,66 @@
 {%extends 'base.html'%}
 
 {%block content%}
+<div class="home">
 <div class="container">
 <div class='head'>
 <div class=" text-center ">
   <h1 style="font: bold"> آموزشگاه رهنمای دانش </h1>
   <p>لذت یادگیری </p>
-</div></div>
+</div></div></div>
 <div class="container texts">
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+  <div class="row home-box">
+    <div class="col-sm-4 home-content">
+      {% load static  %}  
+      <br><br>
+      <img class="home-pic" src={% static 'admin/img/linux.png' %} alt="linux-courses" >
     </div>
-    <div class="col-sm-4">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Column 3</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    <div class="col-sm-7 home-content">
+      <h3>  دوره های مدیریت لینوکس </h3>
+      <p> مدیریت سیستم های لینوکس یکی از پرمتقاضی ترین تخصص ها در لینوکس است. اگر می خواهید وارد بازار کار لینوکس شوید و یا مهارت های مدیریت سرورهای لینوکس، شبکه، امنیت، رایانش ابری، مجازی سازی و HA و یا مدیریت شبکه های مختلط لینوکسی و ویندوزی را بیاموزید، قطعا این دوره ها مهارت و تجربه های لازم را به شما می آموزند.</p>
+      <p>دوره های علوم داده در حوزه برنامه نویسی، ذخیره سازی، کاوش و تحلیل داده ارائه می شوند که طبق آمارهای رسمی متخصصان Data Science یکی از بالاترین درآمدها را در حوزه فناوری اطلاعات و همچنین مدیریت دارند. در کنار دوره های ELK Stack، Machine learning و Deep Learning دوره Python for data science پرطرفدارترین دوره در این حوزه است که در مجموعه خانه لینوکس برگزار می شود.</p>
     </div>
   </div>
-</div>
+  </div>
 
-<div class="myCarousel container">
+
+  <div class="container texts">
+    <div class="row home-box">
+      <div class="col-sm-4 home-content">
+        {% load static  %}  
+        <br><br>
+        <img class="home-pic" src={% static 'admin/img/IOT.jpg' %} alt="IOT-courses" >
+      </div>
+      <div class="col-sm-7 home-content">
+        <h3>دوره های IOT</h3>
+        <p>انفجار دستگاه های هوشمند، سیستم ها و فن آوری های جاسازی شده و متصل شده در زندگی ما فرصتی برای اتصال هر چیزی به اینترنت ایجاد کرده است. جمع آوری داده ها و اتصال آنها به نتیجه رسیده است و کارایی و راه حل هایی که قبلا فقط در داستان های علمی تخیلی به نمایش گذاشته شده اکنون واقعیت تبدیل شده است. </p><p> دوره های ارائه شده در این مرکز آموزشی، طیف وسیع و جامعی از المان های پیاده سازی بستر IOT را در بالاترین سطح علمی و عملیاتی روز دنیا پوشش می دهد. این دوره ها شامل مباحث Embedded Linux، Sys Integration & Real-Time، Kernel modification and optimization، برنامه نویسی با C و Python، Device Driver Development for Embedded and x86 systems ، رایانش ابری، مانیتورینگ، تحلیل داده و لاگ و ... است.</p>
+      </div>
+
+    </div>
+    </div>
+
+
+    <div class="container texts">
+      <div class="row home-box">
+        <div class="col-sm-4 home-content">
+          {% load static  %}  
+          <br><br>
+          <img class="home-pic" src={% static 'admin/img/develop.jpg' %} alt="linux-courses" >
+        </div>
+        <div class="col-sm-7 home-content">
+          <h3> دوره های توسعه نرم افزار</h3>
+          <p>تنها مجموعه آموزشی تخصصی لینوکس و متن باز در کشور و یکی از برترین ها در دنیاست که به صورت فوق تخصصی با 12 سال سابقه حرفه ای به آموزش و مشاوره در حوزه لینوکس و متن باز می پردازد و دوره های جامع و به روزی را بصورت عملیاتی با نگرش آموزش و پیاده سازی تکنولوژی با تغییرات علوم لینوکس و متن باز در دنیا ارائه می دهد.</p>
+          <p>این دوره ها بصورت گام به گام تکنولوژی های توسعه نرم افزار، framework ها و متدهای برنامه نویسی سیستم عامل، برنامه نویسی وب، موبایل و همچنین برنامه نویسی در سامانه های مختلف به منظور پیشبرد اهداف تولید و توسعه نرم افزاری را آموزش می دهند. زبان هایی چون C، Java، PHP، ،Python، Bash و بسیاری دیگراز زبان ها در این دوره ها بصورت تخصصی آموزش داده می شوند.</p>
+        </div>
+      </div>
+      </div>
+    
+<br><br><br>
+
+
+<div class="myCarousel">
 <br>
-  <div class="row">
-  <div id="myCarousel" class="carousel slide col-lg-7" data-ride="carousel">
-    <div class="center">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -42,15 +71,15 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">{% load static  %}  
-        <img src={% static 'admin/img/online-learning1.jpg' %} alt="online_learning" style="width: 200; height:200;margin: 0 auto">
+        <img src={% static 'admin/img/online-learning1.jpg' %} alt="online_learning" style="width: 250; height:200; margin: 0 auto">
       </div>
 
       <div class="item">
-        <img src={% static 'admin/img/CollegeStudent.jpg' %} alt="online_learning" style="width: 200; height:200;margin: 0 auto">
+        <img src={% static 'admin/img/CollegeStudent.jpg' %} alt="online_learning" style="width: 250; height:200; margin: 0 auto">
       </div>
 
       <div class="item">
-        <img src={% static 'admin/img/online_learning.jpg' %} alt="online-learning " style="width: 200; height:200;margin: 0 auto">
+        <img src={% static 'admin/img/online_learning.jpg' %} alt="online-learning " style="width: 250; height:200; margin: 0 auto">
       </div>
     </div>
 
@@ -64,9 +93,8 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-  </div>
 </div>
-</div>
+
 <br><br>
 </div>
 
