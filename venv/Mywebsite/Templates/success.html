@@ -1,0 +1,23 @@
+{%extends 'base.html'%}
+
+
+
+{% block content %}
+<div class="container success">
+<p id="success-text">ثبت نام شما با موفقیت انجام شد. کارشناسان ما به زودی با شما تماس خواهند گرفت</p>
+</div>
+<br><br>
+<br><br>
+<div class="container"> 
+    <meta http-equiv = "refresh" content = "3; url = {% url 'home' %} " />
+    <p id="move"> شما در حال انتقال به صفحه اصلی هستید</p>
+    <p id="move"> چنانچه پس از ۴ثانیه به صفحه اصلی هدایت نشدید از طریق لینک زیر اقدام کنید</p>
+    <button type="submit" class="btn btn-redirect">صفحه اصلی </button>
+</div>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+{% endblock %} 
